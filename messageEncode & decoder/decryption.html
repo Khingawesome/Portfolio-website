@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Decryption | Cryptography</title>
+</head>
+<body>
+  <header id="subHeader">
+    <nav id="main-nav">
+      <div class="container">
+        <div class="header-logo">
+          <img src="img/codeGraphicLogo.JPG" alt=""class="logo">
+          <marquee behavior="" direction="left"><h3>CODE GRAPHIC<span class="primary-color">MESSAGE ENCODER</span></h3></marquee>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="encryption.html">Encrypt</a></li>
+          <li><a href="decryption.html" class="current">Decrypt</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- main section -->
+  <div class="container">
+  <section id="faculty">
+          <div class="error-message">please complete the form to continue</div>
+          <h1 class="large-header">FILL THE FORM TO <span class="primary-color">DECRYPT</span> A MESSAGE</h1>
+            <form id="task-form">
+                <div class="formWrap">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" placeholder="Full name" id="full-name" class="task-input">
+                </div>
+                <div class="formWrap">
+                    <label for="lname">Enter key (must be between 1 and 5)</label>
+                    <input type="number" placeholder="decryption key" id="decryption-key" class="task-input" min="1" maxlength="2">
+                </div>
+                <div class="formWrap">
+                    <label for="message">Message to Decrypt:</label>
+                    <textarea placeholder="Drop a message" class="task-input"></textarea>
+                </div>
+                <div class="formWrap">
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+                <div class="messageDiv"></div>
+            </form>
+  </section>
+  <div class="loading">
+    <img src="img/loading.gif" alt="">
+    <p class="loading-text">Dear Yusuf Abdulmalik, please kindly wait while the messsage encrypt</p>
+  </div>
+  <div class="instruction result">
+    <h3 style="text-align: center;">Encrypted <span class="primary-color">Message</span></h3>
+    <address class="message-decrypter" style="display: block;">dear Yusuf Abdulmalik, your encrypted message is :</address>
+    <p class="encrypted-text">universal basic education is the name of the school where i did my junior secondary school</p>
+    <p class="my-1">The key used for decryption is <span class="key-used key-generated"></span></p>
+  </div>
+</div>
+
+  <footer style="position: fixed; bottom: 0;">
+    <div class="container">
+      <div class="lastChild">
+        <p class="lead">Copyright &copy; 2021 and supported by <span class="primary-color">CodeGraphics</span> </p>
+      </div>
+    </div>
+  </footer>
+  <script src="appDecryption.js"></script>
+</body>
+</html>
